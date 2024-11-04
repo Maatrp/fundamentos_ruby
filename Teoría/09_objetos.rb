@@ -1,3 +1,10 @@
+#Clase Object (Podemos sobreescribir o añadir métodos a la clase Object)
+class Object
+  def sayHello
+    puts "Hello"
+  end  
+end  
+
 # Clase Padre 
 class Person 
   # Constructor
@@ -41,5 +48,8 @@ end
 student = Student.new("Juan", 30, "España", "Ingeniería Informática") 
 puts student.introduce
 
-# Llamamos al metodo de clase
+# Llamamos al método de la clase Object
+student.sayHello
+
+# Llamamos al método de clase
 Person.general_data_protection_regulation  
