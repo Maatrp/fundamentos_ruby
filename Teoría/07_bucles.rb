@@ -38,10 +38,6 @@ end
 for i in (0..5).step(2) # Salta de 2 en 2
   puts "For 0..5.step(2): " + i.to_s 
 end
-=begin
-
-=end
-
 
 for i in 0..5 # Para cuando cumple la condición
   puts "For 0..5 break: " + i.to_s
