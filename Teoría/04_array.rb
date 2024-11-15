@@ -4,6 +4,7 @@ ages = []
 # Array con valores
 names = ["marta", "Paco", "Luis", "Fernando", "Santiago", "Josefa", "Alicia"]
 puts "names[1]: " + names[1]
+puts names.inspect # Muestra el contenido del array con los []
 
 # Array con valores tipo string
 surnames = %w{Martinez Perez Lopez } # Dejar espacios en blanco en la última posición
@@ -29,6 +30,9 @@ puts "names_and_surnames: " + names_and_surnames.join(" , ")
 
 surnames_and_names = surnames.concat(names)
 puts "surnames_and_names: " + surnames_and_names.join(" , ")
+
+# Comprobar valor en el array
+puts "names.include?(Santiago): " + names.include?("Santiago").to_s
 
 # Eliminar el primer valor
 names.shift # Elimina el primer valor y devuelve actualizado el array
